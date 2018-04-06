@@ -1,0 +1,13 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.4.4-rc1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+
+// Dependencies
+@import 'settings';
+@import '../../node_modules/foundation-sites/scss/foundation';
+
+// optional imports
+@include foundation-grid;
