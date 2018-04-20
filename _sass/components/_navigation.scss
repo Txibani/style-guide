@@ -1,0 +1,29 @@
+.nav {
+
+    .title {
+        text-align: right;
+        font-weight: bold;
+        padding-top: 15px;
+        display: block;
+        font-size: 17px;
+        margin-bottom: 0;
+    }
+
+    ul {
+        margin: 0;
+
+        li {
+            list-style: none;
+            color: $dark;
+            text-align: right;
+
+            a {
+                color: $dark;
+                font-size: 15px;
+            }
+
+        }
+
+    }
+
+}

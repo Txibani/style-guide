@@ -1,0 +1,36 @@
+- title: Primatives
+  subfolderitems:
+    - page: Colours
+      url: /colours.html
+    - page: Typeface
+      url: /thing2.html
+    - page: Grid
+      url: /thing3.html
+    - page: Paragraph
+      url: /thing4.html
+- title: Components
+  subfolderitems:
+    - page: Buttons
+      url: /piece1.html
+    - page: Forms
+      url: /piece2.html
+    - page: Overlay
+      url: /piece3.html
+    - page: Modal
+      url: /piece3.html
+    - page: Messaging
+      url: /piece3.html
+    - page: Concertina
+      url: /piece3.html
+    - page: Tables
+      url: /piece3.html
+    - page: Header
+      url: /piece3.html
+    - page: Footer
+      url: /piece3.html
+- title: Elements
+  subfolderitems:
+    - page: Icons
+      url: /widget1.html
+    - page: Graphics
+      url: /widget2.html
