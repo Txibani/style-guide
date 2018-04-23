@@ -8,10 +8,16 @@
 
     &.ep-primary {
         background-color: $ep;
+        &.hov, &:hover {
+            background-color: $ep-hover;
+        }
     }
 
     &.dark {
         background-color: $dark;
+        &.hov, &:hover {
+            background-color: $dark-hover;
+        }
     }
 
     &.hollow {
@@ -19,12 +25,19 @@
         background-color: $white;
         color: $dark;
         box-shadow: none;
+        &:hover {
+            border: solid 1px $grey-bt;
+        }
     }
 
     &.disabled {
         background-color: $disabled;
-        color: #979797;
+        color: $disabled-grey;
         opacity: 1;
+        &:hover {
+            background-color: $disabled;
+            color: $disabled-grey;
+        }
     }
 
 }

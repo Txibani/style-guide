@@ -1,0 +1,73 @@
+<div class="forms">
+
+    <p class="subtitle">Inputs</p>
+
+    <div class="row">
+        <div class="columns small-12 medium-3">
+            <label for="test">Label input:</label>
+            <input id="test" type="text" readonly="readonly" placeholder="Empty textfield">
+        </div>
+    
+        <div class="columns small-12 medium-3">
+            <label for="test1">Label input:</label>
+            <input id="test1" type="text" readonly="readonly" placeholder="Focus">
+        </div>
+    
+        <div class="columns small-12 medium-3">
+            <label for="test2">Label input:</label>
+            <input id="test2" type="text" readonly="readonly" placeholder="Error">
+            <span class="form-input-error">
+                    This field is required
+            </span>
+
+        </div>
+
+        <div class="columns small-12 medium-3"></div>
+
+    </div>
+
+    <pre><code><p class="pre-title">HTML</p><span class="tag">&lt;!--Normal state--&gt;</span>
+<span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">""</span>&gt;</span>Label input:<span class="tag">&lt;/<span class="name">label</span>&gt;</span>
+<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">placeholder</span>=<span class="string">"Empty textfield"</span>&gt;</span><br>
+<span class="tag">&lt;!--Error state--&gt;</span>
+<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">""</span> <span class="attr">class</span>=<span class="string">"ng-dirty"</span> <span class="attr">placeholder</span>=<span class="string">"Error"</span>&gt;</span>
+<span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"form-input-error"</span>&gt;</span>This field is required<span class="tag">&lt;/<span class="name">span</span>&gt;</span></code></pre>
+
+<pre><code><p class="pre-title">SCSS</p><span class="tag"></span><span class="name">.input</span> <span class="tag">{</span>
+    <span class="string">width</span>: 100%;
+    <span class="string">border-radius</span>: 2px;
+    <span class="string">background-color</span>: #ff6600;
+    <span class="string">height</span>: 32px;
+    <span class="string">border</span>: 1px solid #c0c0c0;
+    <span class="string">color</span>: #4a4a4a;
+    <span class="string">font-size</span>: 13px;
+    <span class="string">padding</span>: 0 .5rem;
+    <span class="string">margin</span>: 0 0 1rem;
+    <span class="string">outline</span>: none;
+    <span class="tag"></span><span class="name">&:focus</span> <span class="tag">{ //Focus</span>
+        <span class="string">background-color</span>: #fefefe;
+        <span class="string">border</span>: 1px solid #8a8a8a;
+        <span class="string">box-shadow</span>: 0 0 5px #cacaca;
+        <span class="string">transition</span>: box-shadow .5s,border-color .25s ease-in-out;
+    <span class="tag">}</span>
+    <span class="tag"></span><span class="name">&.ng-dirty</span> <span class="tag">{ //Error</span>
+        <span class="string">background-color</span>: #fefefe;
+        <span class="string">border</span>: 1px solid #CC1424;
+    <span class="tag">}</span>
+<span class="tag">}</span><br>
+<span class="tag"></span><span class="name">.form-input-error</span> <span class="tag">{ //Focus</span>
+    <span class="string">color</span>: #CC1424;
+    <span class="string">font-size</span>: 13px;
+    <span class="string">display</span>: block;
+    <span class="string">line-height</span>: 1.2;
+    <span class="string">margin-bottom</span>: 10px;
+    <span class="string">margin-top</span>: -12px;
+<span class="tag">}</span></code></pre>
+
+    <p class="subtitle">Text Areas</p>
+
+    <p class="subtitle">Radio Buttons</p>
+
+    <p class="subtitle">Checkboxes</p>
+
+</div>

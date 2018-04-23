@@ -155,18 +155,18 @@
     <p class="subtitle">Breakpoints</p>
 
     <div>
-    <pre><code class="scss"><span class="hljs-variable">$breakpoints</span>: (
-    small: <span class="hljs-number">0px</span>,
-    medium: <span class="hljs-number">640px</span>,
-    large: <span class="hljs-number">1024px</span>,
-    xlarge: <span class="hljs-number">1200px</span>,
-    xxlarge: <span class="hljs-number">1440px</span>,
+    <pre><code class="scss"><span class="name">$breakpoints</span>: (
+    <span class="string">small:</span> 0px,
+    <span class="string">medium:</span> 640px,
+    <span class="string">large:</span> 1024px,
+    <span class="string">xlarge:</span> 1200px,
+    <span class="string">xxlarge:</span> 1440px,
 );</code></pre>
-    <pre><code class="scss"><span class="hljs-selector-class">.element</span> {
-    @<span class="hljs-keyword">include</span> breakpoint(small) {
+    <pre><code class="scss"><span class="name">.element</span> {
+    @<span class="string">include breakpoint(small)</span> {
       <span class="hljs-comment">// CSS for small devices</span>
     }
-    @<span class="hljs-keyword">include</span> breakpoint(large) {
+    @<span class="string">include breakpoint(large)</span> {
       <span class="hljs-comment">// CSS for for large devices</span>
     }
   }</code></pre>
