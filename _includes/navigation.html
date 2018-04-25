@@ -1,74 +1,18 @@
-<!-- <nav class="nav" role="navigation">
+{%- assign default_paths = site.pages | map: "path" -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+
+{%- if page_paths -%}
+<nav class="nav">
     <ul>
-        <li><span>Primatives</span></li>
-        <li><a href="/colours">Colours</a></li>
-        <li><a href="#">Typeface</a></li>
-        <li><a href="#">Grid</a></li>
-        <li><a href="#">Paragraph</a></li>
-        <li><span>Components</span></li>
-        <li><a href="#">Buttons</a></li>
-        <li><a href="#">Forms</a></li>
-        <li><a href="#">Overlay</a></li>
-        <li><a href="#">Modal</a></li>
-        <li><a href="#">Messaging</a></li>
-        <li><a href="#">Concertina</a></li>
-        <li><a href="#">Tables</a></li>
-        <li><a href="#">Header</a></li>
-        <li><a href="#">Footer</a></li>
-        <li><span>Elements</span></li>
-        <li><a href="#">Icons</a></li>
-        <li><a href="#">Graphics</a></li>
-    </ul>
-</nav> -->
-
-<!-- This finds the current page so it can be highlighted. -->
-
-<!-- {% for entry in site.data.navigation %}
-{% capture fullurl %}{{ site.baseurl }}{{ entry.url }}{% endcapture %}
-    {% if fullurl == page.url %}
-        {% assign current_page = fullurl %}
-        {% break %}
-    {% elsif page.url contains fullurl %}
-        {% assign current_page = fullurl %}
-    {% endif %}
-{% endfor %} -->
-
-<!-- <nav>
-    <ul>
-    {% for entry in site.data.navigation %}
-        {% if entry.url == current_page %}
-            {% assign current = ' class="current"' %}
-        {% else %}
-            {% assign current = null %}
-        {% endif %}
-        {% assign sublinks = entry.sublinks %}
-        {% if sublinks %}
-        <li{{ current }}>
-            <a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a>
-            <ul>
-                {% for sublink in sublinks %}
-                <li><a href="{{ site.baseurl }}{{ sublink.url }}">{{ sublink.title }}</a></li>
-                {% endfor %}
-            </ul>
+    {%- for path in page_paths -%}
+        {%- assign my_page = site.pages | where: "path", path | first -%}
+        {%- if my_page.title -%}
+        <li>
+        <!-- <li class="{% if item.url == page.url %}active{% endif %}"> -->
+        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
         </li>
-        {% else %}
-        <li{{ current }}><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.title }}</a></li>
-        {% endif %}
-    {% endfor %}
+        {%- endif -%}
+    {%- endfor -%}
     </ul>
-</nav> -->
-
-
-<nav class="nav" role="navigation">
-{% for item in site.data.navigation %}
-    <p class="title">{{ item.title }}</p>
-    <ul>
-        {% for entry in item.subfolderitems %}
-        <!-- {{ page.url }} -->
-            <li class="{% if item.url == page.url %}active{% endif %}">
-                <a href="{{ entry.url }}">{{ entry.page }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-{% endfor %}
 </nav>
+{%- endif -%}
