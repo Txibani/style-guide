@@ -21,9 +21,20 @@ description: "This is easyProperty's style guide"
 # Build settings
 markdown: kramdown
 theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-assets
 
+sass:
+    css_compressor: sass
+
+assets:
+  sources:
+    - _assets/stylesheets
+
+
+highlighter: rouge
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -35,10 +46,5 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-assets:
-  sources:
-    - _assets/js
-    - _assets/stylesheet
-  js_compressor: uglifier
-  css_compressor: sass
+
 

@@ -5,12 +5,13 @@
     <title>{% if page.title %}{{ page.title }} &ndash; {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="{{"/assets/main.css"}}">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+
+    {% asset global %}
+    {% asset components %}
+
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}
     {%- endif -%}
+    
   </head>
