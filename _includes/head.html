@@ -6,8 +6,9 @@
     <meta name="description" content="{{ site.description }}" />
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
 
-    {% asset global %}
-    {% asset components %}
+    <link rel="stylesheet" href="{{"/assets/global.css"}}">
+    <link rel="stylesheet" href="{{"/assets/components.css"}}">
+  
 
     {%- feed_meta -%}
     {%- if jekyll.environment == 'production' and site.google_analytics -%}

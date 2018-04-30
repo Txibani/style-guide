@@ -26,6 +26,11 @@ plugins:
   - jekyll-feed
   - jekyll-assets
 
+css:
+  global
+  components
+
+
 sass:
     css_compressor: sass
 
