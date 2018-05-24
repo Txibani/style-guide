@@ -1,7 +1,7 @@
 @import 'foundation/f6';
 
 // Variables
-@import 'components/_variables';
+@import 'guide/variables';
 
 //Global
 html, body {
@@ -11,6 +11,7 @@ html, body {
     height: 100%;
     font-family: 'Lato', sans-serif;
     color: $dark;
+    background: #faf8f7;
 }
 
 .main.container {
@@ -46,7 +47,7 @@ html, body {
     text-align: center;
 }
 
-.subtitle {
+.main-subtitle {
     font-size: 17px;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -94,11 +95,123 @@ code {
 
 }
 
+// _forms
+#test:focus {
+    background-color: #fcfcfc;
+    transition: none;
+    border: 1px solid #c0c0c0;
+    box-shadow: none;
+}
+
+#test1 {
+    border: 1px solid #8a8a8a;
+    background-color: #fefefe;
+    box-shadow: 0 0 5px #cacaca;
+}
+
+#test2 {
+    border: 1px solid #CC1424;
+    background-color: #fefefe;
+}
+
+textarea {
+    min-height: 100px !important;
+}
+
+// _modal
+.modal-container {
+    position: relative;
+
+    .modal {
+        position: relative;
+    
+        .overlay {
+            position: absolute !important;
+            min-height: 50vh;
+        }
+    }
+
+    pre {
+        top: 50vh;
+        position: absolute;
+        max-width: 100%;
+    }
+}
+
+
+.footer {
+    margin-top: 0 !important;
+}
+
+.vtable {
+    .accept {
+        color: #5EBB00 !important;
+    }
+}
+
+.wellcome {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 100;
+    padding: 0 2em;
+
+    .separator-center {
+        width: 200px;
+        height: 1px;
+        background: #ff6600;
+    }
+
+    strong {
+        color: #ff6600;
+    }
+
+    .copy {
+        font-size: 14px;
+        font-weight: normal;
+        padding-top: 2em;
+
+        span {
+            position: relative;
+            &:after {
+                position: absolute;
+                content: "";
+                left: -2px;
+                top: 50%;
+                right: 0;
+                border-top: 1px solid;
+                border-color: #f60;
+                -webkit-transform: rotate(-5deg);
+                -ms-transform: rotate(-5deg);
+                transform: rotate(18deg);
+                width: 40px;
+            }
+            &:before {
+                position: absolute;
+                content: "";
+                left: -2px;
+                top: 50%;
+                right: 0;
+                border-top: 1px solid;
+                border-color: #f60;
+                -webkit-transform: rotate(-5deg);
+                -ms-transform: rotate(-5deg);
+                transform: rotate(145deg);
+                width: 40px;
+            }
+
+        }
+
+    }
+
+}
+
 // Components
-@import 'components/header';
-@import 'components/navigation';
+@import 'guide/header';
+@import 'guide/navigation';
 
 // Pages components
-@import 'components/grid';
-@import 'components/paragraph';
-@import 'components/colours';
+@import 'guide/typeface';
+@import 'guide/grid';
+@import 'guide/paragraph';
+@import 'guide/colours';

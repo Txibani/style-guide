@@ -5,6 +5,7 @@
     font-weight: bold;
     padding: .5em 1em;
     margin: 0;
+    outline: 0;
 
     &.ep-primary {
         background-color: #ff6600;
@@ -40,4 +41,19 @@
         }
     }
 
+}
+
+
+.button-group {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-wrap: nowrap;
+    align-items: stretch;
+
+    .button {
+        flex: 1 1 100%
+    }
 }

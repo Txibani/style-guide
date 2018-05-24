@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="480px" height="173px" viewBox="0 0 480 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="LD-designs-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="EPLD-design-02" transform="translate(-126.000000, 0.000000)">
+            <g id="header-bar">
+                <g id="Group" transform="translate(126.000000, 0.000000)">
+                    <path d="M433.350913,121.268127 C431.345319,141.831888 412.680313,155.279973 391.650167,151.30313 L31.7966755,77.5810681 L4.15234375,2.09765625 L420.15625,2.09765625" id="Rectangle-4-Copy" fill="#FF8200"></path>
+                    <path d="M476.715958,65.6148095 C483.846047,82.1041071 475.122963,99.2709545 457.235423,103.957245 L89.552279,172.249551 C78.6959357,174.265973 66.6199764,167.566395 62.5811081,157.288778 L0.787109375,0.04296875 L433.669922,0.04296875" id="Rectangle-4" fill="#FF6600"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

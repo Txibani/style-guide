@@ -1,0 +1,29 @@
+.header {
+    background-color: $dark;
+    height: 50px;
+
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        height: 50px;
+
+        a img {
+            max-width: 250px;
+            position: absolute;
+            top: 0;
+        }
+
+        p {
+            color: $white;
+            margin: 0;
+
+            span {
+               color: $header-orange;
+            }
+        }
+
+    }
+
+}

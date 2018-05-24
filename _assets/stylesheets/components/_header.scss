@@ -1,27 +1,164 @@
-.header {
-    background-color: $dark;
-    height: 50px;
+header {
 
-    &-wrap {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        height: 50px;
+    &.global {
+        margin-bottom: 70px;
+        height: 60px;
+        background-color: #4a4a4a;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
 
-        a img {
-            max-width: 250px;
-            position: absolute;
-            top: 0;
+        .column {
+
+            &:first-child {
+                position: relative;
+            }
+
+            &:last-child {
+                text-align: right;
+            }
+
         }
 
-        p {
-            color: $white;
-            margin: 0;
+        .brand {
+            position: absolute;
+            background-image: url('/images/brand_bg.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 270px;
+            height: 94px;
+            position: absolute;
+            top: 0;
+            left: 30px;
+            overflow: hidden;
 
-            span {
-               color: $header-orange;
+            img {
+                transform: scale(0.6);
+                position: relative;
+                top: 14px;
+                left: -15px;
             }
+
+        }
+
+        .menu {
+            float: right;
+
+            .active {
+
+                & > a {
+                    background-color: #414141;
+                }
+
+            }
+
+            & > li {
+                display: flex;
+                align-items: center;
+
+                &.is-dropdown-submenu-parent {
+                    padding-right: 10px;
+
+                    & > a {
+                        padding-right: 5px;
+
+                        &:after {
+                            content: none;
+                        }
+
+                    }
+
+                    .submenu {
+                        display: none;
+                        position: absolute;
+                        left: -60px;
+                        background-color: #414141;
+                        z-index: 1;
+                        border: 0;
+
+                        li {
+                            width: 100%;
+                            text-align: left;
+                            height: 40px;
+
+                            &:hover {
+
+                                a {
+                                    background-color: #FF7B15 !important;
+                                }
+
+                            }
+
+                            a {
+                                height: 40px;
+                                width: 100%;
+                                text-transform: none;
+
+                                &:after {
+                                    content: none;
+                                }
+
+                            }
+
+                            &:hover {
+                                background-color: #FF7B15;
+                            }
+                        }
+
+                    }
+
+                    &:hover {
+                        background-color: #414141;
+                        
+                        .submenu {
+                            display: block;
+                        }
+
+                    }
+
+                }
+
+                &:last-child {
+
+                    a {
+                        justify-content: flex-start;
+
+                        i {
+                            font-size: 1.5rem;
+                            margin-right: 0.8rem;
+                            display: inline-block;
+                        }
+
+                    }
+
+                }
+
+                & > a {
+                    height: 60px;
+                    padding: .7rem 1rem;
+                    color: #fff;
+                    font-size: 1.125rem;
+                    text-transform: capitalize;
+                    display: inline-flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: #414141;
+                    }    
+
+                    & > i {
+                        font-size: 2.5rem;
+                        margin-right: 0;
+                        display: none;
+                    }
+
+                }
+
+            }
+
         }
 
     }

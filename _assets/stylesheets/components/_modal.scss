@@ -1,0 +1,43 @@
+.overlay {
+    background-color: rgba(59, 61, 80, 0.85);;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+
+    &-content {
+        background-color: #fff;
+        max-width: 450px;
+        border-radius: 4px;
+        padding: 0 1em 0.5em;
+        text-align: center;
+
+        .inner-content {
+            max-width: 80%;
+            margin: 0 auto;
+
+        }
+
+        a {
+            color: #4a4a4a;
+            font-size: 22px;
+        }
+
+        label {
+            text-align: left;
+            padding-bottom: 2px;
+        }
+
+        .vertical-align .form-input-error {
+            margin-top: 2px;
+            text-align: left;
+        }
+    }
+}

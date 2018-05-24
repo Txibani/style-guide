@@ -4,6 +4,16 @@ layout: default
 
 <div class="home">
 
-    {{ content }}
+    <!-- Check if root then display welcome message, else display content -->
+    {% if page.url == "/"  %}
+        <div class="wellcome">
+            <p>Licensee Dashboard</p>
+            <div class="separator-center"></div>
+            <p>Style Guide</p>
+            <p class="copy">The <span>GitHub</span> <strong>easyProperty</strong> style guide includes documentation on design, branding, and code implementation. The design and content of this style guide is a work in progress, but is being actively worked on.</p>
+        </div>
+    {% else %}
+        {{ content }}
+    {% endif %}
 
 </div>
